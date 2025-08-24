@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">RISHI ARAVINDHA</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="menu-toggle" id="menuToggle">
+  <i class="fas fa-bars"></i>
+</div>
+  <!-- mobile menu toggle button -->
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navbar = document.querySelector(".navbar ul");
+
+  let menuOpen = false;
+
+  menuToggle.addEventListener("click", () => {
+    menuOpen = !menuOpen;
+    navbar.classList.toggle("show");
+
+    // Optional icon toggle
+    menuToggle.innerHTML = menuOpen
+      ? '<i class="fas fa-times"></i>'   // Show X icon when open
+      : '<i class="fas fa-bars"></i>';   // Show bars when closed
+  });
+</script>
+
+
+
+  <section class="hero" id="home">
+  <div class="hero-text" >
+    <h1>Hi There,<br>I'm <span>Rishi Aravindha</span></h1>
+    <p>I am a Web Developer</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+    </div>
+    <div class="social-icons">
+  <a href="https://wa.me/918590605553" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.linkedin.com/in/rishi-aravindha-ab511b281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.instagram.com/__mizery_lucifer__/profilecard/?igsh=MXRkaXZvdGdtNDVjYw==" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://github.com/Rishidevlx" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="mailto:rishiaravindhaoff@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+  </div>
+  <div class="hero-image">
+    <img src="./img/1740925567833~2 (5).jpg" alt="Rishi Avatar" />
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="./img/1740925567833~2 (5).jpg" alt="Rishi Aravindha">
+    </div>
+<div class="about-content">
+  <!-- <p class="about-reflect">About</p> 👈 Move this line ABOVE h2 -->
+  <h2>About <span>Me</span></h2>
+  <p class="intro-text">
+    "I'm Rishi Aravindha, a passionate web developer with a keen eye for design and user experience.
+    I thrive on creating innovative and responsive digital solutions that meet both client needs and user expectations."
+  </p>
+</div>
+
+      <div class="about-details">
+        <p><strong>Name:</strong> Rishi Aravindha</p>
+        <p><strong>Date of birth:</strong> March 18, 2006</p>
+        <p><strong>Address:</strong> 218, Mudhaliyar Patti Street, Srivilliputhur, Virudhunagar</p>
+        <p><strong>Pin code:</strong> 626125</p>
+        <p><strong>Email:</strong> rishiaravindhaoff@gmail.com</p>
+        <p><strong>Phone:</strong> +918590605553</p>
+      </div> 
+      <a href="./Resume/Rishi Aravintha - Resume.pdf" class="btn-download" download>Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="education" id="education">
+  <h2 class="section-title">My <span>Education</span></h2>
+  <div class="education-container">
+
+    <!-- <div class="edu-box">
+      <i class="fas fa-school edu-icon"></i>
+      <h3>SSLC - 10th</h3>
+      <p><strong>School:</strong> KVS Matric Hr Sec School</p>
+      <p><strong>Year:</strong> 2021</p>
+      <p><strong>Percentage:</strong> 92%</p>
+    </div> -->
+
+    <div class="edu-box">
+      <i class="fas fa-university edu-icon"></i>
+      <h3>HSC - 12th</h3>
+      <p><strong>School:</strong> Sivanthi patti Nadar Hr Sec School </p>
+      <p><strong>Year:</strong> 2023</p>
+      <!-- <p><strong>Percentage:</strong> 86%</p> -->
+    </div>
+
+    <div class="edu-box">
+      <i class="fas fa-graduation-cap edu-icon"></i>
+      <h3>Bachelor’s Degree</h3>
+      <p><strong>College:</strong> Ayya Nadar Janaki Ammal College Of  Arts & Science</p>
+      <p><strong>Branch:</strong> Bachelor Of Computer Application</p>
+      <p><strong>Year:</strong> 2023 - Present</p>
+    </div>
+
+    <div class="edu-box">
+      <i class="fas fa-code edu-icon"></i>
+      <h3>Internship - Web Development</h3>
+      <p><strong>Company:</strong> Infeara Secure Technologies</p>
+      <p><strong>Year:</strong> 2025</p>
+      <p><strong>Duration:</strong> 2 Months</p>
+      <p><strong>Role:</strong> Responsive websites & admin panels</p>
+    </div>
+
+    <div class="edu-box">
+      <i class="fas fa-shield-alt edu-icon"></i>
+      <h3>Internship - Artificial Intelligence & Machine Learning</h3>
+      <p><strong>Company:</strong> CodeBind Technologies</p>
+      <p><strong>Year:</strong> 2025</p>
+      <p><strong>Duration:</strong> 15 Days</p>
+      <p><strong>Role:</strong> Social Media Analysis using AI & Machine Learning</p>
+    </div>
+
+  </div>
+</section>
+ <!-- Skills -->
+
+ <!-- <section id="skills">
+  <div class="skills-container">
+    <div class="center-skill">My<br>Skills</div>
+    <div class="circle">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" />
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" />
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" />
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="WordPress" />
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="GitHub" />
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968700.png" alt="Canva" />
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968703.png" alt="CapCut" />
+    </div>
+  </div>
+</section> -->
+
+<!-- skills 2  -->
+
+<section id="skills">
+  <h2 class="skills-heading"><span class="white">My</span> <span class="blue">Skills</span></h2>
+  <div class="skills-marquee">
+    <div class="skills-track">
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML"><p>HTML</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/css3.png" alt="CSS"><p>CSS</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/wordpress.png" alt="WordPress"><p>WordPress</p></div>
+      <div class="skill-box"><img src="./img/canva 4.jfif" alt="Canva"><p>Canva</p></div>
+      <div class="skill-box"><img src="./img/github.png" alt="GitHub"><p>GitHub</p></div>
+      <div class="skill-box"><img src="./img/capcut.png" alt="CapCut"><p>CapCut</p></div>
+
+      <!-- Repeating to make loop seamless -->
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML"><p>HTML</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/css3.png" alt="CSS"><p>CSS</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div>
+      <div class="skill-box"><img src="https://img.icons8.com/color/96/wordpress.png" alt="WordPress"><p>WordPress</p></div>
+      <div class="skill-box"><img src="./img/canva 4.jfif" alt="Canva"><p>Canva</p></div>
+      <div class="skill-box"><img src="./img/github.png" alt="GitHub"><p>GitHub</p></div>
+      <div class="skill-box"><img src="./img/capcut.png" alt="CapCut"><p>CapCut</p></div>
+    </div>
+  </div>
+</section>
+<!-- projects  -->
+
+<section id="projects">
+  <h2 class="projects-heading"><span class="white">My</span> <span class="blue">Projects</span></h2>
+
+  <div class="project-card">
+    <div class="project-img-box">
+      <img src="./img/portfolio- img 3.avif" alt="Project" class="project-img">
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+    <div class="project-content">
+      <h3>Portfolio Website</h3>
+      <p>A fully responsive and visually engaging portfolio website crafted to showcase my frontend development skills, UI/UX design capabilities, and attention to detail. It features a sleek dark theme, smooth animations, and a modern, user-friendly layout optimized for all devices. Built using HTML, CSS, and JavaScript, the site ensures performance and accessibility. This project reflects my design thinking, coding discipline, and commitment to delivering polished digital experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+
+<section class="my-services-section" id="services">
+  <h2 class="section-title">
+    <span class="white-text">My</span> <span class="primary-text">Services</span>
+  </h2>
+  <div class="services-wrapper">
+
+    <!-- Service 1 -->
+    <div class="service-card">
+      <div class="icon-circle">
+        <img src="./img/web-link.png" alt="Web Development">
+      </div>
+      <div class="service-content">
+        <h3>Web Development</h3>
+        <p>I build responsive and visually engaging websites using modern Frontend technologies.
+           I also design and develop custom WordPress sites tailored to client needs.
+           Each project is crafted with clean code, smooth UI, and user focused design.
+           From static pages to dynamic CMS sites, I handle it end to end with care.</p>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-card">
+      <div class="icon-circle">
+        <img src="./img/brush.png" alt="Graphic Design">
+      </div>
+      <div class="service-content">
+        <h3>Graphic Designing</h3>
+        <p>I create eye catching posters, engaging videos, and unique logos tailored to your brand.
+            My designs follow modern trends while staying true to your brand identity.
+            From social media creatives to business branding, I deliver high quality visuals.
+            Every design is crafted to grab attention and leave a lasting impression.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- contactus - into  -->
+
+  <section class="contact-intro-section" id="contact">
+  <h2 class="contact-heading">
+    Looking to <span class="primary-text">Design Similar Project</span>?
+  </h2>
+  <p class="contact-subtext">
+    Contact me on any platform and I’ll be happy to help you out!
+  </p>
+
+  <div class="contact-cards-wrapper">
+    <!-- LinkedIn -->
+    <div class="contact-card">
+      <div class="contact-icon">
+        <img src="./img/linkedin-logo.png" alt="LinkedIn" />
+      </div>
+      <div class="contact-details">
+        <h4>LinkedIn</h4>
+        <p><a href="https://www.linkedin.com/in/rishi-aravindha-ab511b281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Visit my LinkedIn</a></p>
+      </div>
+    </div>
+
+    <!-- WhatsApp Card -->
+<div class="contact-card">
+  <div class="contact-icon">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <div class="contact-info">
+    <h4>WhatsApp</h4>
+    <a href="https://wa.me/918590605553" target="_blank" class="whatsapp-btn">Chat with Me</a>
+  </div>
+</div>
+
+    <!-- Email -->
+    <div class="contact-card">
+      <div class="contact-icon">
+        <img src="./img/email 2.png" alt="Email" />
+      </div>
+      <div class="contact-details">
+        <h4>Email</h4>
+        <p><a href="mailto:rishiaravindhaoff@gmail.com">Send Email</a></p>
+      </div>
+    </div>
+
+    <!-- Call -->
+<div class="contact-card">
+  <div class="contact-icon">
+    <i class="fas fa-phone-alt"></i>
+  </div>
+  <div class="contact-info">
+    <h4>Connect with me</h4>
+    <a href="tel:918590605553" class="call-btn">Call Now</a>
+  </div>
+</div>
+
+  <!-- contact us form  -->
+
+<section class="contact-section">
+  <div class="contact-left">
+    <h2 class="hover-glow">Web Developer</h2>
+    <h2 class="hover-glow">& Graphic Designer</h2>
+    <p class="hover-para">
+      I design and develop modern websites using frontend tools and WordPress.
+      I specialize in creating visually appealing posters, logos, and videos for brand promotion.
+      Let’s collaborate to turn your ideas into stunning results.
+    </p>
+  </div>
+
+  <div class="contact-right">
+    <form class="contact-form" id="contactForm">
+      <div class="input-row">
+        <div class="input-group">
+          <input type="text" id="name">
+          <label for="name">Your Name</label>
+          <span class="underline"></span>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email">
+          <label for="email">Your Email</label>
+          <span class="underline"></span>
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <input type="text" id="subject">
+          <label for="subject">Subject</label>
+          <span class="underline"></span>
+        </div>
+        <div class="input-group">
+          <input type="tel" id="phone">
+          <label for="phone">Phone Number</label>
+          <span class="underline"></span>
+        </div>
+      </div>
+      <div class="input-group full-width">
+        <textarea rows="4" id="message"></textarea>
+        <label for="message">Your Message</label>
+        <span class="underline"></span>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <div id="successMessage" class="floating-success">✅ Message Successfully Sent!</div>
+      <div id="errorMessage" class="floating-error">❌ Please Follow Error Messages and Complete as Required</div>
+
+    </form>
+  </div>
+  
+
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const inputs = form.querySelectorAll('input, textarea');
+  const successMessage = document.getElementById('successMessage');
+  const errorMessage = document.getElementById('errorMessage'); // ✅ Error message element
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let allFilled = true;
+
+    // Reset styles
+    inputs.forEach(input => {
+      const group = input.closest('.input-group');
+      group.classList.remove('invalid', 'shake');
+    });
+    form.classList.remove('shake');
+    errorMessage.style.display = 'none'; // Hide error initially
+
+    // Validate each input
+    inputs.forEach(input => {
+      const group = input.closest('.input-group');
+      if (!input.value.trim()) {
+        group.classList.add('invalid', 'shake');
+        allFilled = false;
+      }
+    });
+
+    if (!allFilled) {
+      // Shake entire form
+      form.classList.add('shake');
+      // Show error message
+      errorMessage.style.display = 'block';
+
+      // Remove shake effect after animation
+      setTimeout(() => {
+        form.classList.remove('shake');
+        inputs.forEach(input => {
+          input.closest('.input-group').classList.remove('shake');
+        });
+      }, 400);
+    } else {
+      // Hide error message
+      errorMessage.style.display = 'none';
+
+      // Show success message
+      successMessage.style.display = 'block';
+      form.reset();
+
+      // Hide success after 3s
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 3000);
+    }
+  });
+</script>
+<!-- footer section  -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Why should you choose to get in touch with us?</h3>
+      <p>Websites, posters, logos, videos , <br> I design it all. Let’s create something awesome together!</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/__mizery_lucifer__/profilecard/?igsh=MXRkaXZvdGdtNDVjYw==" class="icon-box"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Rishidevlx" class="icon-box"><i class="fab fa-github"></i></a>
+        <a href="mailto:rishiaravindhaoff@gmail.com" class="icon-box"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/yourwhatsapplink" class="icon-box"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/rishi-aravindha-ab511b281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon-box"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="home">→ Home</a></li>
+        <li><a href="about">→ About</a></li>
+        <li><a href="education">→ Education</a></li>
+        <li><a href="services">→ Services</a></li>
+        <li><a href="projects">→ Projects</a></li>
+        <li><a href="contact">→ Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-services">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="services">→ Web Development</a></li>
+        <li><a href="services">→ Graphic Design</a></li>
+        <li><a href="services">→ Video Editing</a></li>
+        <!-- <li><a href="#">→ Data Analysis</a></li>
+        <li><a href="#">→ Graphic Design</a></li> -->
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Have a Questions?</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 216 , Mudhaliyar Patti Street , Srivilliputhur , Virudhunagar - 626125</li>
+        <li><i class="fas fa-phone"></i> +91 8590605553</li>
+        <li><i class="fas fa-envelope"></i> rishiaravindhaoff@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Rishi Aravintha All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
